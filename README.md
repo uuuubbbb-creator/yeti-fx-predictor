@@ -1,5 +1,7 @@
 # ¥ETI — 국민여행조사와 TEMPO를 이용한 여행자 맞춤 환율 예측 서비스
 
+📌 **정식 프로젝트명**: (수상) BDA 채용연계데이터분석 공모전_여행자 맞춤 환율 예측 서비스
+
 > 팀 으라차차 | 제3회 BDA 채용연계데이터분석 공모전 (2025.08.16, 우수상)
 
 ---
@@ -252,9 +254,9 @@ Streamlit 기반 웹 서비스는 4가지 기능으로 구성됩니다.
 
 ## Appendix — 프로젝트 산출물
 
-- 데이터 아이디어 기획서(PDF, 18p) / 발표자료(PDF, 37p)
-- EDA 코드: `구매항목별_지출EDA.ipynb`, `EDA_방문지_핵심타겟.ipynb`, `항공EDA.ipynb`
-- 파이프라인 코드: `run_pipeline.py`(전체 흐름 오케스트레이션), `rule_based_classifier/classifier.py`(민감도 분류), `src/generate_news_summary.py`·`generate_impact_score.py`(Gemini API 뉴스 처리), `src/prepare_input_tensor.py`(TEMPO 입력 결합), `src/recommend_exchange_dates.py`(예측→추천)
+- 데이터 아이디어 기획서: [`docs/데이터_아이디어_기획서.pdf`](./docs/데이터_아이디어_기획서.pdf)(18p) / 발표자료: [`docs/발표자료.pdf`](./docs/발표자료.pdf)(37p)
+- EDA 코드: [`code/EDA/`](./code/EDA) — `구매항목별_지출EDA.ipynb`, `EDA_방문지_핵심타겟.ipynb`, `항공EDA.ipynb`
+- 파이프라인 코드: [`code/run_pipeline.py`](./code/run_pipeline.py)(전체 흐름 오케스트레이션), [`rule_based_classifier/classifier.py`](./code/rule_based_classifier/classifier.py)(민감도 분류), [`src/generate_news_summary.py`](./code/src/generate_news_summary.py)·[`generate_impact_score.py`](./code/src/generate_impact_score.py)(Gemini API 뉴스 처리), [`src/prepare_input_tensor.py`](./code/src/prepare_input_tensor.py)(TEMPO 입력 결합), [`src/recommend_exchange_dates.py`](./code/src/recommend_exchange_dates.py)(예측→추천)
 - 서비스 배포: yetiapp.streamlit.app · 시연 영상: youtube.com/watch?v=GY9vBCIUlWU
 
 ### 외부 의존성 안내
